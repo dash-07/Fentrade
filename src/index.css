@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Black";
+    src: local("VastagoGroteskBlack"),
+        url("./fonts/VastagoGrotesk-Black.otf") format("opentype");
+}
+@font-face {
+    font-family: "Bold";
+    src: local("VastagoGroteskBold"),
+        url("./fonts/VastagoGrotesk-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: "ExtraLight";
+    src: local("VastagoGroteskExtraLight"),
+        url("./fonts/VastagoGrotesk-ExtraLight.otf") format("opentype");
+}
+@font-face {
+    font-family: "Heavy";
+    src: local("VastagoGroteskHeavy"),
+        url("./fonts/VastagoGrotesk-Heavy.otf") format("opentype");
+}
+@font-face {
+    font-family: "Light";
+    src: local("VastagoGroteskLight"),
+        url("./fonts/VastagoGrotesk-Light.otf") format("opentype");
+}
+@font-face {
+    font-family: "Medium";
+    src: local("VastagoGroteskMedium"),
+        url("./fonts/VastagoGrotesk-Medium.otf") format("opentype");
+}
+@font-face {
+    font-family: "Regular";
+    src: local("VastagoGroteskRegular"),
+        url("./fonts/VastagoGrotesk-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: "SemiBold";
+    src: local("VastagoGroteskSemiBold"),
+        url("./fonts/VastagoGrotesk-SemiBold.otf") format("opentype");
+}
+@font-face {
+    font-family: "Thin";
+    src: local("VastagoGroteskThin"),
+        url("./fonts/VastagoGrotesk-Thin.otf") format("opentype");
+}
+
+
+@layer base {
+    :root {
+        --blue: #5271FF;
+    }
+
+    body {
+        /* font-family: 'Poppins', sans-serif; */
+        font-family: "Regular";
+    }
+
+    .drag-none {
+        -webkit-user-drag: none;
+    }
+
+    .nav {
+        transition: background-color 200ms linear;
+    }
+
+    /* label::after {
+        content: "+";
+        position: absolute;
+        right: 20px;
+        font-size: 2rem
+    } */
+    input[type="radio"]:checked + label > span {
+        transform: rotate(135deg);
+    }
+
+    input[type="radio"]:checked ~ p {
+        max-height: 100vh;
+    }
+
+        .select-wrapper::before,
+        .select-wrapper::after {
+            --size: 0.3rem;
+            position: absolute;
+            content: "";
+            right: 1rem;
+            pointer-events: none;
+        }
+    
+        .select-wrapper::before {
+            border-left: var(--size) solid transparent;
+            border-right: var(--size) solid transparent;
+            border-bottom: var(--size) solid black;
+            top: 40%;
+        }
+    
+        .select-wrapper::after {
+            border-left: var(--size) solid transparent;
+            border-right: var(--size) solid transparent;
+            border-top: var(--size) solid black;
+            top: 55%;
+        }
+
+    .select {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 100%;
+        padding: .5rem 1rem;
+        background-color: #fff;
+        border: 1px solid #caced1;
+        border-radius: 0.25rem;
+        color: #4F5564;
+        cursor: pointer;
+    }
+}
