@@ -40,7 +40,7 @@ export default function Footer() {
               <Link to="/" className="my-2 md:my-3">
                 Terms
               </Link>
-              <Link to="/" className="my-2 md:my-3">
+              <Link to="/privacy" className="my-2 md:my-3">
                 Privacy Policy
               </Link>
             </div>

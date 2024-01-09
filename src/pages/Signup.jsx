@@ -91,7 +91,7 @@ export default function Signup() {
             />
           </div>
           <div className="flex gap-4 items-center p-4 my-3">
-            <input type="checkbox" />
+            <input type="checkbox" required />
             <p className="text-xs">
               Agree to Fentrade Terms and conditions & Privacy Policy
             </p>

@@ -21,6 +21,7 @@ import "./fonts/VastagoGrotesk-Medium.otf";
 import "./fonts/VastagoGrotesk-Regular.otf";
 import "./fonts/VastagoGrotesk-SemiBold.otf";
 import "./fonts/VastagoGrotesk-Thin.otf";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 const Layout = () => {
   return (
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "faq",
         element: <Faq />,
+      },
+      {
+        path: "privacy",
+        element: <PrivacyPolicy />,
       },
     ],
   },

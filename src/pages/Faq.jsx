@@ -1,5 +1,6 @@
 import Cta from "../components/Cta";
 import Footer from "../components/Footer";
+import Accordion from "../components/Accordion";
 
 export default function Faq() {
   return (
@@ -21,14 +22,16 @@ export default function Faq() {
               />
               <p className="text-xl">About Fentrade</p>
             </div>
-            <div className="relative px-4 py-2 my-4 bg-[#F3F4F5] rounded-lg">
-              <input type="radio" name="faq" id="faq1" className="hidden" />
+            {/* <div className="relative px-4 py-2 my-4 bg-[#F3F4F5] rounded-lg">
+              <input type="radio" name="faq1" id="faq1" className="hidden" />
               <label
                 htmlFor="faq1"
-                className="cursor-pointer flex justify-between items-center"
-              >
+                className=
+                  "cursor-pointer flex justify-between items-center">
                 <p>What is Fentrade?</p>
-                <span className="text-[2rem] transition-transform duration-500">
+                <span
+                  className="text-[2rem] transition-transform duration-500"
+                >
                   +
                 </span>
               </label>
@@ -42,63 +45,46 @@ export default function Faq() {
                 the most trusted gift card trading platform. Get started
                 immediately here
               </p>
-            </div>
-            {/* =============== Section 2 =============== */}
-            <div className="relative px-4 py-2 my-4 bg-[#F3F4F5] rounded-lg">
-              <input type="radio" name="faq" id="faq2" className="hidden" />
-              <label
-                htmlFor="faq2"
-                className="cursor-pointer flex justify-between items-center"
-              >
-                <p>How to Contact Fentrade?</p>
-                <span className="text-[2rem] transition-transform duration-500">
-                  +
-                </span>
-              </label>
-              <p className="max-h-0 overflow-hidden transition-all duration-700 ease-in">
-                <b className="my-4">1. Support System</b> <br /> With our
+            </div> */}
+            <Accordion
+              title="What is Fentrade"
+              content="<p>
+                Fentrade is an advanced digital retail exchange platform
+                dedicated to the efficient conversion of unused gift cards into
+                cash. Since our inception, we have been committed to providing
+                users with simple, fast and secure gift card selling solutions.
+                You can sell gift cards at the most competitive prices in the
+                market. 💰Get cash instantly, 💸Earn rewards. We strive to be
+                the most trusted gift card trading platform. Get started
+                immediately here
+              </p>"
+            />
+            <Accordion
+              title="How to Contact Fentrade?"
+              content="<p>
+                <b>1. Support System</b> <br /> With our
                 support system, you can ask questions about each order and we
                 will answer your questions ASAP.
-                <br /> <b className="my-4">2. Email Communication</b>
+                <br /> <b>2. Email Communication</b>
                 <br /> you can reach us via email at support@fentrade.com. Share
                 your concerns, questions, or feedback.
-              </p>
-            </div>
-            {/* =============== Section 3 =============== */}
-            <div className="relative px-4 py-2 my-4 bg-[#F3F4F5] rounded-lg">
-              <input type="radio" name="faq" id="faq3" className="hidden" />
-              <label
-                htmlFor="faq3"
-                className="cursor-pointer flex justify-between items-center"
-              >
-                <p>Are you always online?</p>
-                <span className="text-[2rem] transition-transform duration-500">
-                  +
-                </span>
-              </label>
-              <p className="max-h-0 overflow-hidden transition-all duration-700 ease-in">
+              </p>"
+            />
+            <Accordion
+              title="Are you always online?"
+              content="<p>
                 Yes, we maintain 24/7 online presence to provide our customers
                 with the highest level of support and service.
-              </p>
-            </div>
-            {/* =============== Section 4 =============== */}
-            <div className="relative px-4 py-2 my-4 bg-[#F3F4F5] rounded-lg">
-              <input type="radio" name="faq" id="faq4" className="hidden" />
-              <label
-                htmlFor="faq4"
-                className="cursor-pointer flex justify-between items-center"
-              >
-                <p>Can I Switch My Account Country?</p>
-                <span className="text-[2rem] transition-transform duration-500">
-                  +
-                </span>
-              </label>
-              <p className="max-h-0 overflow-hidden transition-all duration-700 ease-in">
+              </p>"
+            />
+            <Accordion
+              title="Can I Switch My Account Country?"
+              content="<p>
                 Sorry, you cannot switch your account country. The currency and
                 products available to you will be determined by the country you
                 choose when registering.
-              </p>
-            </div>
+              </p>"
+            />
           </div>
         </div>
         <Cta />

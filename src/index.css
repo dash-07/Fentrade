@@ -67,19 +67,13 @@
         transition: background-color 200ms linear;
     }
 
-    /* label::after {
-        content: "+";
-        position: absolute;
-        right: 20px;
-        font-size: 2rem
-    } */
-    input[type="radio"]:checked + label > span {
+    /* input[type="radio"]:checked + label > span {
         transform: rotate(135deg);
     }
 
     input[type="radio"]:checked ~ p {
         max-height: 100vh;
-    }
+    } */
 
         .select-wrapper::before,
         .select-wrapper::after {
