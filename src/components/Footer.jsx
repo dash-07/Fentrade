@@ -37,7 +37,7 @@ export default function Footer() {
               <Link to="/" className="my-2 md:my-3">
                 About Us
               </Link>
-              <Link to="/" className="my-2 md:my-3">
+              <Link to="/terms" className="my-2 md:my-3">
                 Terms
               </Link>
               <Link to="/privacy" className="my-2 md:my-3">
@@ -46,7 +46,7 @@ export default function Footer() {
             </div>
             <div className="flex flex-col">
               <p className="text-[#ffffff80] my-2 md:my-3">Customer</p>
-              <Link to="/" className="my-2 md:my-3">
+              <Link to="/rates" className="my-2 md:my-3">
                 Gift Card Rates
               </Link>
               <Link to="/" className="my-2 md:my-3">
